@@ -1,0 +1,1 @@
+Upload lab.html and index.html to repository root. The other files may remain unchanged. Lab page photographs currently reference Wix media servers; replace with local images eventually. Review names and membership before publication.
