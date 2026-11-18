@@ -54,7 +54,7 @@ const journalNames=[
 ];
 function escapeHTML(v){return v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
 function formatCitation(citation){
-  const yearMatch=citation.match(/\(\d{4}[a-z]?\)/);
+  const yearMatch=citation.match(/\((?:\d{4}[a-z]?|in press)\)/i);
   const authorsEnd=yearMatch?yearMatch.index:0;
   const authors=citation.slice(0,authorsEnd);
   const rest=citation.slice(authorsEnd);
